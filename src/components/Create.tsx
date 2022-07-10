@@ -6,7 +6,7 @@ const Create = () => {
   const [body, setBody] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<EventTarget>) => {
     e.preventDefault();
 
     const item = { title, body };
